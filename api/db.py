@@ -49,12 +49,4 @@ elif EnglishWords.select().count() == 0:
         english_row.save()
 
 print("Created!")
-
-random_latin_word = LatinWords.select().order_by(fn.Random()).get()
-word_variant_one = LatinWords.select().order_by(fn.Random()).get()
-word_variant_two = LatinWords.select().order_by(fn.Random()).get()
-
-print("Random latin word: ", random_latin_word.latin_original)
-print("Random latin translation: ", random_latin_word.latin_translated)
-
 db.close()
