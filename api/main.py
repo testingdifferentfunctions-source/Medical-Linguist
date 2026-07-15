@@ -16,6 +16,8 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from db import LatinWords, GreekWords, EnglishWords
 
+# a simple comment
+
 app = FastAPI()
 
 load_dotenv()
