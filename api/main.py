@@ -9,10 +9,6 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 
 from peewee import *
-from latin_words import latin_dict
-from greek_words import greek_dict
-from english_words import english_dict
-
 import asyncio
 import random
 import os
