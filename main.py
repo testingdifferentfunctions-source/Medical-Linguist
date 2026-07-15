@@ -45,6 +45,11 @@ keys_greek_list = list(greek_dict.keys())
 keys_english_list = list(english_dict.keys())
 
 
+@app.get("/")
+async def root():
+    return {"message": "Сервер бота успішно працює!"}
+
+
 @router.message(Command("start"))
 async def start_the_bot(message: Message):
     menu_keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="Латинка",
