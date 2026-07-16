@@ -2,4 +2,4 @@ aiogram>=3.0.0
 peewee
 fastapi
 uvicorn
-python-dotenv
+dotenv
