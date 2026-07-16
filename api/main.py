@@ -38,11 +38,6 @@ class TestCallback(CallbackData, prefix="test"):
     answer_id: int
 
 
-keys_latin_list = list(latin_dict.keys())
-keys_greek_list = list(greek_dict.keys())
-keys_english_list = list(english_dict.keys())
-
-
 @router.message(Command("start"))
 async def start_the_bot(message: Message):
     menu_keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="Латинка",
