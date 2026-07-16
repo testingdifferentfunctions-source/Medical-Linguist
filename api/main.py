@@ -13,7 +13,7 @@ import asyncio
 import random
 import os
 from fastapi import FastAPI, Request
-from db import LatinWords, GreekWords, EnglishWords
+from api.db import LatinWords, GreekWords, EnglishWords
 
 try:
     from dotenv import load_dotenv
