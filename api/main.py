@@ -12,15 +12,18 @@ from peewee import *
 import asyncio
 import random
 import os
-from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from db import LatinWords, GreekWords, EnglishWords
 
-# a simple comment
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+    
+except ImportError:
+    pass
 
 app = FastAPI()
-
-load_dotenv()
+    
 TOKEN = os.getenv("TOKEN")
 bot = Bot(token=TOKEN)
 
