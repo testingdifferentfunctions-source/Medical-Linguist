@@ -1,7 +1,4 @@
 from peewee import *
-from latin_words import latin_dict
-from greek_words import greek_dict
-from english_words import english_dict
 
 db = SqliteDatabase("database.db")
 
